@@ -82,15 +82,16 @@ Student_Enrollment_Manager_Project/
 
 ## ⚙️ Installation
 
-### 1. Clone or download the project
+### 1. Clone the Repository
 
-Open PowerShell or Command Prompt and navigate to the project folder.
+Clone the repository and navigate into the project folder:
 
 ```bash
-cd "C:\Users\Megh\OneDrive\Desktop\NIIT_DA\PYTHON\CAPSTONE PROJECT\Student_Enrollment_Manager_Project"
+git clone https://github.com/megh-malvankar/student-enrollment-manager.git
+cd student-enrollment-manager
 ```
 
-### 2. Install required libraries
+### 2. Install Required Libraries
 
 ```bash
 pip install pandas numpy openpyxl groq python-dotenv
@@ -104,22 +105,24 @@ Create a `.env` file in the project directory:
 API_KEY=YOUR_GROQ_API_KEY
 ```
 
-**Do not upload your real API key to GitHub.**
+Replace `YOUR_GROQ_API_KEY` with your own Groq API key.
 
-## ▶️ How to Run
+**⚠️ Security:** Never upload your real API key or `.env` file to GitHub.
 
-Open PowerShell in the project folder and run:
+Add the following to `.gitignore`:
+
+```gitignore
+.env
+students_data.xlsx
+__pycache__/
+```
+
+### 4. Run the Application
 
 ```bash
 python main.py
 ```
 
-The application will display:
-
-```text
-1 Add 2 View 3 Search 4 Update 5 Delete 6 Analyze 7 AI 8 Classify 9 Exit
-Choice:
-```
 
 ## 🧑‍💻 Application Workflow
 
