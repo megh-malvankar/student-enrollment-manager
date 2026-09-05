@@ -1,162 +1,181 @@
-# Skills & Technologies
+Student Enrollment Manager --- Skills
 
-## Project
-
-**Student Enrollment Manager**
+Project Overview
 
 A Python-based student enrollment management application that
 demonstrates student record management, Excel data handling, NumPy-based
 analysis, custom Python modules, and Groq API-powered Generative AI
 features.
 
-------------------------------------------------------------------------
+Core Skills
 
-## Core Skills
+Python
 
-### 1. Python
+Core programming language used to build the application.
 
--   Core programming language used to build the application.
--   Uses functions, classes, methods, dictionaries, loops, conditionals,
-    and user input.
--   Uses `if __name__ == "__main__":` as the application entry point.
+Uses functions, classes, methods, dictionaries, loops, conditionals,
+and user input.
 
-### 2. Object-Oriented Programming (OOP)
+Uses if __name__ == "__main__": as the application entry point.
 
--   Implements a `StudentManager` class.
--   Uses a constructor with `__init__()`.
--   Organizes student operations into class methods.
--   Uses an object instance to run the application.
+Object-Oriented Programming (OOP)
 
-### 3. Pandas
+Implements the StudentManager class.
 
--   Reads student records from Excel using `pandas.read_excel()`.
--   Converts student records into a DataFrame.
--   Writes updated records back to Excel using `DataFrame.to_excel()`.
+Uses a constructor with __init__().
 
-### 4. NumPy
+Organizes student operations into class methods.
 
--   Converts program data into NumPy arrays.
--   Uses `np.unique()` to calculate program-wise student counts.
--   Supports basic data analysis of enrollment information.
+Uses an object instance to run the application.
 
-### 5. Excel Data Management
+Pandas
 
--   Uses `students_data.xlsx` for persistent student data storage.
--   Loads existing records when the application starts.
--   Saves changes after adding, updating, or deleting records.
+Reads student records from Excel using pandas.read_excel().
 
-### 6. CRUD Operations
+Converts student records into a DataFrame.
 
-The application implements core student record management operations:
+Writes updated records to Excel using DataFrame.to_excel().
 
--   **Create** --- Add Student
--   **Read** --- View and Search Students
--   **Update** --- Modify Student Details
--   **Delete** --- Remove Student Records
+NumPy
 
-### 7. Generative AI
+Converts program data into NumPy arrays.
 
--   Integrates the Groq API with an LLM.
--   Generates student-related insights from enrollment data.
--   Provides:
-    -   Scholarship suggestions
-    -   Placement readiness
-    -   Improvement tips
+Uses np.unique() to calculate program-wise student counts.
 
-### 8. API Integration
+Supports basic enrollment data analysis.
 
--   Uses the Groq Python client to communicate with an external AI API.
--   Sends structured student information through an API request.
--   Processes the API response and displays AI-generated insights.
+Excel Data Management
 
-### 9. Custom Python Modules
+Uses students_data.xlsx for persistent student data storage.
 
--   Separates AI functionality into `student_ai_utils.py`.
--   Uses custom functions:
-    -   `generate_ai_insights()`
-    -   `classify_students()`
--   Imports these functions into the main application.
+Loads existing records when the application starts.
 
-### 10. Data Validation
+Saves changes after adding, updating, or deleting records.
 
--   Checks for duplicate Student IDs before adding a record.
--   Validates required student fields.
--   Uses `.strip()` to clean user input.
+CRUD Operations
 
-### 11. Exception Handling
+Create --- Add student
 
--   Handles missing Excel files with `FileNotFoundError`.
--   Handles Groq API exceptions.
--   Handles Excel permission errors when implemented in the final
-    version.
+Read --- View and search students
 
-### 12. Rule-Based Classification
+Update --- Modify student details
 
-Students are classified based on their enrolled program:
+Delete --- Remove student records
 
--   **AI / ML** → Eligible for Placement
--   **Data-related programs** → Eligible for Scholarship
--   **Other programs** → Needs Counselling
+Generative AI
 
-------------------------------------------------------------------------
+Integrates the Groq API with an LLM.
 
-## Libraries & Tools
+Generates student-related insights from enrollment data.
 
-  Technology      Usage
-  --------------- --------------------------------------
-  Python          Application development
-  Pandas          Data processing and Excel operations
-  NumPy           Enrollment analysis
-  OpenPyXL        Excel file support
-  Groq            Generative AI API integration
-  python-dotenv   Environment variable management
+Provides scholarship suggestions, placement-readiness guidance, and
+improvement tips.
 
-------------------------------------------------------------------------
+API Integration
 
-## Key Technical Concepts Demonstrated
+Uses the Groq Python client to communicate with an external AI API.
 
--   Python Programming
--   Object-Oriented Programming
--   Data Structures
--   Dictionary-based data management
--   File Handling
--   Excel Data Processing
--   Data Analysis
--   CRUD Operations
--   API Integration
--   Generative AI
--   Custom Modules
--   Input Validation
--   Exception Handling
--   Rule-Based Classification
+Sends structured student information through an API request.
 
-------------------------------------------------------------------------
+Processes and displays the API response.
 
-## Project Skills Summary
+Custom Python Modules
 
-**Python \| Object-Oriented Programming \| Pandas \| NumPy \| Excel \|
-Data Analysis \| CRUD Operations \| Generative AI \| API Integration \|
-Custom Python Modules \| Data Validation \| Exception Handling**
+Separates AI functionality into student_ai_utils.py.
 
-------------------------------------------------------------------------
+Uses custom functions:
 
-## Security Best Practice
+generate_ai_insights()
 
-API credentials should be stored in a `.env` file rather than hard-coded
+classify_students()
+
+Imports these functions into the main application.
+
+Data Validation
+
+Checks for duplicate Student IDs before adding a record.
+
+Validates required student fields.
+
+Uses .strip() to clean user input.
+
+Exception Handling
+
+Handles missing Excel files with FileNotFoundError.
+
+Handles Groq API exceptions.
+
+The final version can handle Excel PermissionError when the
+workbook is locked.
+
+Rule-Based Classification
+
+Students are classified according to their enrolled program:
+
+AI / ML → Eligible for Placement
+
+Data-related programs → Eligible for Scholarship
+
+Other programs → Needs Counselling
+
+Libraries and Tools
+
+Technology      Usage
+
+Python          Application development
+Pandas          Data processing and Excel operations
+NumPy           Enrollment analysis
+OpenPyXL        Excel file support
+Groq            Generative AI API integration
+python-dotenv   Environment variable management
+
+Technical Concepts Demonstrated
+
+Python Programming
+
+Object-Oriented Programming
+
+Data Structures
+
+Dictionary-based data management
+
+Excel Data Processing
+
+Data Analysis
+
+CRUD Operations
+
+API Integration
+
+Generative AI
+
+Custom Python Modules
+
+Input Validation
+
+Exception Handling
+
+Rule-Based Classification
+
+Skills Summary
+
+Python | Object-Oriented Programming | Pandas | NumPy | Excel |
+Data Analysis | CRUD Operations | Generative AI | API Integration |
+Custom Python Modules | Data Validation | Exception Handling
+
+Security Best Practice
+
+API credentials should be stored in a .env file rather than hard-coded
 in Python source code.
 
 Example:
 
-``` env
 API_KEY=YOUR_GROQ_API_KEY
-```
 
-The `.env` file should be excluded from GitHub using `.gitignore`.
+Add the following to .gitignore:
 
-``` gitignore
 .env
 __pycache__/
 students_data.xlsx
-```
 
-**Never commit or publish a real API key.**
+Never commit or publish a real API key.
